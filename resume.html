@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <title>JC - Resume</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h3>Personal Site</h3>
+        
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Portfolio Sections</button>
+            <div class="dropdown-content">
+              <a href="sec1.html">Section One</a>
+              <a href="sec2.html">Section Two</a>
+              <a href="sec3.html">Section Three</a>
+            </div>
+        </div>
+
+        <a href="essay.html">Essay</a>
+        <a href="personalVideo.html">Video</a>
+        <a href="extras.html">Extras</a>
+    </div>
+
+    <!-- Title -->
+    <h1 style="text-align: center;">Resume</h1>
+    
+    <div class="container">
+        <!-- Buttons to show different elements of the resume-->
+        <div class="buttons">
+            <h4>Click on a button to show information!</h4>
+            
+            <button id="resumeBtn" onclick="showText('text1')">Technology Experience</button>
+            <br><br>
+            <button id="resumeBtn" onclick="showText('text2')">Education</button>
+            <br><br>
+            <button id="resumeBtn" onclick="showText('text3')">Awards and Certifications</button>
+            <br><br>
+            <button id="resumeBtn" onclick="showText('text4')">Volunteer Work</button>
+        </div>
+
+        <!-- Blank space between buttons and info-->
+        <div class="blank"></div>
+
+        <!-- Information to show -->
+        <div class="info">
+            <!-- Technology Experience -->
+            <div id="text1" class="text-content">
+                <h3>Technology Experience</h3>
+                <!-- Ionic Group -->
+                <p><i>August 2021 to Present</i></p>
+                <h4>The Ionic Group LLC - Web Developer</h4>
+                <ul>
+                    <li>Developed a website for the Ionic Group</li>
+                    <li>Edited photos to fit customer needs</li>
+                    <li>Developed SEO tools to boost advertising</li>
+                    <li>Delivered to mobile users</li>
+                </ul>
+
+                <!-- IcyScript -->
+                <p><i>August 2021 to Present</i></p>
+                <h4>IcyScript Designs LLC - CEO</h4>
+                <ul>
+                    <li>Established my own LLC with proper tax ID requirements</li>
+                    <li>Designed my own logo</li>
+                    <li>Developed my website</li>
+                </ul>
+
+            </div>
+
+            <!-- Education -->
+            <div id="text2" class="text-content">
+                <h3>Education</h3>
+                <!-- Santa Fe College -->
+                <p><i>August 2024 - Present</i></p>
+                <h4>Santa Fe College</h4>
+                <ul>
+                    <li>Taken five Computer Science classes by Spring of 2025 (in progress)</li>
+                    <li>Taken one Art Appreciation in Fall 2024</li>
+                    <li>Taken one Art History class in Spring 2025 (in progress)</li>
+                    <li>Taken one Design class in Spring 2025 (in progress)</li>
+                </ul>
+
+                <br>
+                <!-- Martin County High School -->
+                <p><i>August 2022 - May 2024</i></p>
+                <h4>Martin County High School</h4>
+                <ul>
+                    <li>Taken one year of Digital Art</li>
+                    <li>Taken one year of Creative Writing</li>
+                    <li>Taken and passed eight AICE courses</li>
+                    <li>Taken one AP course </li>
+                </ul>
+
+                <br>
+                <!-- Pahrump Valley High School -->
+                <p><i>August 2020 - May 2022</i></p>
+                <h4>Pahrump Valleyy High School</h4>
+                <ul>
+                    <li>Taken two years of Computer Science </li>
+                    <li>Taken one year of Creative Writing</li>
+                    <li>Taken one year of Studio Art</li>
+                    <li>Taken two AP classes</li>
+                </ul>
+
+                <br>
+                <!-- ID Tech Camp -->
+                <p><i>June 10 - 14, 2019</i></p>
+                <h4>iD Tech Camp - University of Nevada, Las Vegas</h4>
+                <ul>
+                    <li>Studied Unreal Engine Level Design</li>
+                </ul>
+            </div>
+            
+            <!-- Awards and Certifications -->
+            <div id="text3" class="text-content">
+                <h3>Awards and Certifications</h3>
+                <ul>
+                    <li>Academic Letter Recipient, August 17, 2021 (GPA 3.8)</li>
+                    <li>Certified PC Pro, December 17, 2020</li>
+                        <ul>
+                            <li>Certifications included Computer Operating Systems, PC Hardware and Software, Mobile Devices and Troubleshooting</li>
+                        </ul>
+                    <li>Industry Certification, April 2023</li>
+                        <ul>
+                            <li>Certifications included small business ownership, levels of ownership and roles in a company, required paperwork and documents for a company</li>
+                        </ul>
+                    <li>Certificate of Excellence for Digital Art 1, April 13th, 2023</li>
+                    <li>Academic Excellence for A/B Honor Roll, 2022-2023 school year</li>
+                    <li>Nominated for and won a MartinArts award for Literary Arts, November 8th, 2023</li>
+                    <li>Dean’s List for grades at Santa Fe College, Fall 2024</li>
+                </ul>
+            </div>
+            
+            <!-- Volunteer Work -->
+            <div id="text4" class="text-content">
+                <h3>Volunteer Work</h3>
+                <ul>
+                    <li>Martin County Library System, June 2023 - October 2023</li>
+                        <ul>
+                            <li>Participated in Teen Community of Service bags that allowed me to help around my community, as well as learn more about it</li>
+                            <li>Wrote over thirty book reviews that can be accessed on the library system’s website</li>
+                        </ul>
+                    <li>Humane Society of Treasure Coast, September 2023</li>
+                        <ul>
+                            <li>Attended an event on September 8, 2023, helped pass out raffle tickets to attendees on the night of the event, as well as help set up and close the event</li>
+                        </ul>
+                    <li>Martin County School District, September 2023</li>
+                        <ul>
+                            <li>Attended an after school event at Citrus Grove Elementary School and aided the organization of a fun night for students</li>
+                        </ul>
+                </ul>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </div> <!-- Closes the container -->
+    
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+    <!-- Footer -->
+    <footer>
+        <h3 style="text-align: center;">Jazmine Cratty</h3>
+    </footer>
+</body>
+</html>
+
+
+<!-- Buttons needed: 
+- Technology Experience
+- Education 
+- Awards and Certifications
+- Volunteer Work 
+-->

@@ -1,0 +1,598 @@
+/* EVERYTHING */
+*
+{
+    background-color: #E3DBC5;
+    box-sizing: border-box;
+}
+
+/****************** HEADER ******************/
+.header
+{
+    /* Decorations */
+    background-color: #E3DBC5;
+    text-align: center; 
+    text-decoration: none;
+
+    /* Semantics */
+    width: 100%;
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Buttons in the header */
+.header a 
+{
+    /* Decorations */
+    background-color: #E3DBC5;
+    text-align: center;
+    padding: 15px 0px;
+        /* Text */
+    font-family: "Space Mono", serif;
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    
+    /* Semantics */
+    display: inline-block;
+    width: 16%;
+    transition: all 0.3s ease;
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+}
+
+/* Hover on the buttons in the header */
+.header a:hover
+{
+    /* Decorations */
+    background-color: #D2B88D;
+    text-decoration: none;
+
+    /* Semantics */
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+}
+
+.dropbtn 
+{
+    /* Decorations */
+    font-family: "Space Mono", serif;
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #E3DBC5;
+    /* Semantics */
+    padding: 15px;
+    border: none;
+}
+  
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #E3DBC5;
+    min-width: 15em;
+    box-shadow: 0px 6px 12px 0px #000000;
+    text-align: left; 
+}
+  
+.dropdown-content a 
+{
+    color: #000000;
+    padding: 10px 80px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {background-color: #D2B88D;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: #D2B88D;}
+
+
+/**************** BUTTONS FOR HOME PAGE ******************/
+/* Directory */
+/* holds the buttons */
+.directory
+{
+    /* Decorations */
+    background-color: #E3DBC5;
+
+    /* Semantics */
+    display: inline-block;
+    margin: 0;
+    transition-duration: 0.4s;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60em;
+}
+  
+.directory a 
+{
+    /* Decorations */
+    background-color: #E3DBC5;
+    text-decoration: none;
+    text-align: center;
+        /* Text */
+    color: #79394D;
+    text-align: center;
+    font-family: "Cormorant SC", serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 50px;
+        /* Border */
+    border: 3px solid #79394D;
+    height: 4em;
+
+    /* Semantics */
+    display: block;
+    padding: 12px;
+}
+  
+.directory a:hover 
+{
+    background-color: #D2B88D;
+}
+/* For the image on the home page */
+img 
+{
+    max-width: 120px;
+    max-height: 120px;
+    align-self: center; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/********************* RESUME ***********************/
+.container 
+{
+    display: grid;
+    grid-template-areas:
+      "buttons blank info";
+    grid-template-columns: 2fr, 1fr, 5fr;
+    gap: 10px;
+    background-color: #E3DBC5;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.container > div 
+{
+    background-color: #E3DBC5;
+    padding: 10px;
+}
+
+.container > div.buttons 
+{
+    grid-area: buttons;
+    background-color: #E3DBC5; 
+}
+
+.container > div.blank
+{
+    grid-column: 2;
+    grid-area: blank;
+    background-color: #E3DBC5;
+}
+
+/* Everything for the buttons and text */
+.container > div.info
+{
+    grid-column: 3; 
+    grid-area: info;
+    background-color: #E3DBC5;
+    margin: 0; 
+    padding: 15px;
+    overflow: hidden;
+    max-width: 100%;
+    
+}
+
+.text-content 
+{
+    margin: 0; 
+    padding: 15px;
+    overflow: hidden;
+    text-align: left; 
+    max-width: 100%;
+}
+
+.text1, .text2, .text3, .text4
+{
+    padding: 15px;
+}
+
+#resumeBtn
+{
+    /* Decoration */
+    background-color: #E3DBC5;
+    border: 3px solid #79394D;
+    height: 5em;
+    width: 35em;
+    padding: 20px;
+    display: inline-block;
+    font-family: "Space Mono", serif;
+    color: #000000;
+    font-size: 15px;
+}
+
+#resumeBtn:hover
+{
+    background-color: #D2B88D;
+}
+
+/********************* PORTFOLIO SECTION PAGES ***********************/
+.sectionButtons
+{
+    /* Decorations */
+    background-color: #E3DBC5;
+    text-decoration: none; 
+
+    /* Semantics */
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60em;
+}
+
+#sectionButton
+{
+    /* Decorations */
+    background-color: #E3DBC5;
+    text-decoration: none;
+    text-align: center;
+    color: #79394D;
+    margin-top: 15px;
+    line-height: 50px;
+        /* Border */
+    border: 3px solid #79394D;
+    height: 12em;
+
+    /* Semantics */
+    display: block;
+    padding: 12px;
+}
+
+/*********************** SECTION ONE THINGS ***********************/
+/***** Medium Man's Page *****/
+.mediumMan
+{
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.mediumMan:hover
+{
+    opacity: 0.7;
+}
+
+/***** Small Life Magazine *****/
+.smallLife
+{
+    max-height: 75%;
+    max-width: 75%;
+    background-color: none;
+}
+
+.smallLife:hover
+{
+    opacity: 0.7;
+}
+
+.miniBakery
+{
+    max-height: 35%;
+    max-width: 35%;
+    background-color: none;
+}
+
+.miniBakery:hover
+{
+    opacity: 0.7;
+}
+/* This and the class below are basically the same, 
+but both need to stay for the modals to work */
+.modal-content-smallLife
+{   
+    background-color: rgba(0,0,0,0.05); 
+    max-width: 90%; 
+    max-height: 90%;
+    margin: auto; 
+}
+
+.modal-content-smallLife img
+{
+    max-width: 80%; 
+    max-height: 80%; 
+    width: auto;     
+    height: auto;    
+    display: block; 
+    margin: auto;
+}
+
+/**** Things for modal images ****/
+/* Modal Background */
+.modal 
+{
+    display: none; /* Hides this background */
+    position: fixed;
+    z-index: 1;
+    padding-top: 75px; 
+    left: 0;
+    top: 0;
+    /* Span the whole screen */
+    width: 100%; 
+    height: 1000%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Image - default for Medium Man */
+.modal-content 
+{
+    margin: auto;
+    display: block;
+    max-width: 32%;
+    max-height: 32%;
+    overflow: auto;
+}
+
+/* Open Animation */
+.modal-content
+{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+/* Animations */
+@-webkit-keyframes zoom 
+{
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom 
+{
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* Close Button */
+.close 
+{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #E3DBC5;
+    background-color: rgba(0,0,0,0.9);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus 
+{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*********************** VIDEOS ***********************/
+video
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.personalVideo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.miniBakeryVideo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+/*********************** ESSAY ***********************/
+.essay
+{
+    /*decorations*/
+    font-family: "Space Mono", serif;
+    color: #BB7482;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-indent: 40px;
+}
+
+/*********************** EXTRAS GALLERY ***********************/
+/*
+.container-extras
+{
+    display: grid;
+    grid-template-areas:
+      "img1 img2 img3";
+    grid-template-columns: 1fr, 1fr, 1fr;
+    gap: 10px;
+    background-color: #E3DBC5;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.container-extras > div 
+{
+    background-color: #E3DBC5;
+    padding: 10px;
+}
+
+.container-extras > div.img1 
+{
+    grid-area: img3;
+    background-color: #E3DBC5; 
+}
+
+.container-extras > div.img2
+{
+    grid-area: img2;
+    background-color: #E3DBC5;
+}
+*/
+
+/* Extras Gallery */
+div.gallery 
+{
+    background-color: #D2B88D;
+}
+  
+div.gallery img 
+{
+    width: 100%;
+    height: 100%;
+    background-color: #D2B88D;
+}
+  
+div.desc 
+{
+    text-align: center;
+    background-color: #D2B88D;
+}
+  
+.responsive 
+{
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+  
+@media only screen and (max-width: 700px) 
+{
+    .responsive 
+    {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+@media only screen and (max-width: 500px) 
+{
+    .responsive 
+    {
+      width: 100%;
+    }
+}
+
+.extrasImg
+{
+    width: 100%;
+    height: auto;
+    background-color: #D2B88D;
+}
+
+.extrasImgPortrait
+{
+    width: 100%;
+    height: 100%;
+    background-color: #D2B88D;
+}
+
+/****************** HEADER ******************/
+.container > div.header 
+{
+    grid-area: header;
+    text-align: center;
+}
+
+/******************* FONTS *******************/
+/* Name / Title */
+h1
+{
+    font-family: "Cormorant SC", serif;
+    color: #79394D;
+    font-size: 75px;
+}
+
+/* Subheadings */
+h2
+{
+    font-family: "Cormorant SC", serif;
+    color: #79394D;
+    font-size: 35px;
+}
+
+/* Header + Footer */
+h3
+{
+    font-family: "Cormorant SC", serif;
+    color: #79394D;
+    font-size: 30px;
+    text-decoration: none; 
+}
+
+/* ? */
+h4
+{
+    font-family: "Space Mono", serif;
+    color: #BB7482;
+    font-size: 15px;
+}
+
+/* Paragraph */
+p
+{
+    font-family: "Space Mono", serif;
+    color: #BB7482;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* List */
+ol, ul
+{
+    font-family: "Space Mono", serif;
+    color: #BB7482;
+    font-size: 15px;
+}
+
+
+/* PALLET 
+Background color: #E3DBC5
+Darker Brown: #D2B88D
+Dusty Rose: #BB7482
+Darker Pink: #79394D
+Black: #000000
+
+FONTS 
+font-family: "Cormorant SC", serif;
+font-family: "Space Mono", serif;
+*/
